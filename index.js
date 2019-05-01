@@ -7,6 +7,7 @@ const bodyParser = require('body-parser')
 
 // serve static react production build
 app.use(express.static('build'))
+console.log(__dirname)
 
 app.use(cors());
 app.use(bodyParser.json())
