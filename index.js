@@ -84,7 +84,7 @@ app.delete('/persons/:id', (req, res) => {
     const id = parseInt(req.params.id)
     persons = persons.filter(a => a.id !== id)
 
-    response.status(204).end()
+    res.status(204).end()
 })
 
 app.listen(PORT, () => {
